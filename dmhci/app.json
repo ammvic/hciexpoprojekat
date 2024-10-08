@@ -1,0 +1,30 @@
+{
+  "name": "dm",
+  "displayName": "dm",
+  "slug": "dm",
+  "scheme": "myapp",
+  "plugins": [
+    "expo-secure-store",
+    "@react-native-google-signin/google-signin"
+  ],
+  "ios": {
+    "supportsTablet": true,
+    "bundleIdentifier": "host.exp.exponent", 
+    "infoPlist": {
+      "NSCameraUsageDescription": "This app uses the camera to allow users to take photos.",
+      "NSLocationWhenInUseUsageDescription": "This app needs access to your location to show relevant content."
+    }
+  },
+  "android": {
+    "permissions": [
+      "CAMERA",
+      "ACCESS_FINE_LOCATION"
+    ],
+    "package": "host.exp.exponent" 
+  },
+  "web": {},
+  "extra": {
+    "googleRedirectUri": "https://auth.expo.io/@ammvic/dm",
+    "expoClientId": "526369692731-hcrkdp3vghogc6irmecr4m42cie4d5gh.apps.googleusercontent.com" 
+  }
+}
